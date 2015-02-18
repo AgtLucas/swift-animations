@@ -86,6 +86,7 @@ class ViewController: UIViewController {
 
     UIView.animateWithDuration(0.5, animations: {
         self.heading.center.x += self.view.bounds.width
+        self.username.center.x += self.view.bounds.width
     })
     
   }
