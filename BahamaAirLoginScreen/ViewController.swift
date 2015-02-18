@@ -84,8 +84,16 @@ class ViewController: UIViewController {
     username.center.x -= view.bounds.width
     password.center.x -= view.bounds.width
 
+    UIView.animateWithDuration(0.5, animations: {
+        self.heading.center.x += self.view.bounds.width
+    })
+
     UIView.animateWithDuration(0.5, delay: 0.3, options: nil, animations: {
         self.username.center.x += self.view.bounds.width
+    }, completion: nil)
+
+    UIView.animateWithDuration(0.5, delay: 0.4, options: nil, animations: {
+        self.password.center.x += self.view.bounds.width
     }, completion: nil)
     
   }
