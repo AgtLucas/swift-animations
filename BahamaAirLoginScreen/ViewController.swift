@@ -84,6 +84,9 @@ class ViewController: UIViewController {
     username.center.x -= view.bounds.width
     password.center.x -= view.bounds.width
 
+    cloud1.center.x -= view.bounds.width
+    cloud3.center.x -= view.bounds.width
+
     UIView.animateWithDuration(0.5, animations: {
         self.heading.center.x += self.view.bounds.width
     })
@@ -94,6 +97,14 @@ class ViewController: UIViewController {
 
     UIView.animateWithDuration(0.5, delay: 0.4, options: nil, animations: {
         self.password.center.x += self.view.bounds.width
+    }, completion: nil)
+
+    UIView.animateWithDuration(0.9, delay: 0.9, options: .CurveEaseOut, animations: {
+        self.cloud1.center.x += self.view.bounds.width
+    }, completion: nil)
+
+    UIView.animateWithDuration(1.2, delay: 0.6, options: .CurveEaseOut, animations: {
+        self.cloud3.center.x += self.view.bounds.width
     }, completion: nil)
     
   }
